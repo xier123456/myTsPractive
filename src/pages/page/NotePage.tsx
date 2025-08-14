@@ -2,10 +2,9 @@ import { useSelector } from "react-redux"
 import { Link, useParams } from "react-router-dom"
 import type { RootState } from "../../Store/store"
 import TechBackgroundNoGrid from "../../style/Background"
-import type React from "react"
 
 
-const NotePage:React.FC = () => {
+const NotePage= () => {
     const allNotes =useSelector((state:RootState)=>state.notes.fristNotes)
     const {id,uid}= useParams<string>()
     const notepage=allNotes.find(notes=>notes.id.toString() === uid)

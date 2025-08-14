@@ -1,11 +1,14 @@
 import { configureStore } from "@reduxjs/toolkit";
 import notesReducer from './slice//NotesSlice/NotsSlice'
-
+import TechReducer from './slice/TechnologySlice/TechnologySlice'
+import MisceReducer from './slice/Miscellaneous/Miscellaneous'
 
 
 export const store= configureStore({
     reducer:{
-        notes:notesReducer
+        notes:notesReducer,
+        Tech:TechReducer,
+        Misce:MisceReducer
 
     }
 }) 

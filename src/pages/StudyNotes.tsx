@@ -1,11 +1,11 @@
-import React  from "react";
+
 import {  useSelector } from "react-redux";
 import type { RootState } from "../Store/store";
 import Title from "../style/title";
 import TechBackgroundNoGrid from "../style/Background";
-import NotesCrad from "../style/NotesCrad";
+import NotesCrad from "../style/NotesCard";
 
-const StudyNotes: React.FC = () => {
+const StudyNotes= () => {
 
   const notes = useSelector((state: RootState) => state.notes).fristNotes;
 

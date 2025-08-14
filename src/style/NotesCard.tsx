@@ -1,9 +1,9 @@
 import {setNotesInitialStat} from '../Store/slice/NotesSlice/NotsSlice'
 import type { NotesInterface } from "../Store/slice/NotesSlice/NotsSlice";
-import { useNavigate } from "react-router";
+import { useNavigate } from "react-router-dom";
 import { useDispatch } from "react-redux";
 
-const NotesCrad = ({ id, title, date, content, tags }: NotesInterface) => {
+const NotesCard = ({ id, title, date, content, tags }: NotesInterface) => {
   
     const navigate= useNavigate()
     const dispatch = useDispatch()
@@ -11,9 +11,7 @@ const NotesCrad = ({ id, title, date, content, tags }: NotesInterface) => {
 
     const handleNotesID = (id:number) => {
         dispatch(setNotesInitialStat(id))
-        navigate(`/Notes/${id}`)
-        console.log(id);
-        
+        navigate(`/Notes/${id}`)    
   };
 
   return (
@@ -45,4 +43,4 @@ const NotesCrad = ({ id, title, date, content, tags }: NotesInterface) => {
   );
 };
 
-export default NotesCrad;
+export default NotesCard;

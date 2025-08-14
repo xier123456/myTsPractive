@@ -1,11 +1,11 @@
 
 import Up from '../assets/UserImage/up.jpg'
 import { VscGithub } from "react-icons/vsc";
-import type React from "react";
-import { Link } from "react-router";
+
+import { Link } from "react-router-dom";
 import '../index.css'
 
-const Home:React.FC = () => {
+const Home= () => {
   return (
     <article className="h-screen ">
       <div className='hero min-h-screen home-hero_index'>

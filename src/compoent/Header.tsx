@@ -13,9 +13,9 @@ const Header:React.FC = () => {
     { id: 1, tlitle: "首页",hrfe: "/"},
     { id: 2, tlitle: "学习笔记", hrfe: "/Notes"},
     { id: 3, tlitle: "友链",hrfe: "/Friend",},
-    { id: 4, tlitle: "说说",hrfe: "/",},
-    { id: 5, tlitle: "个人发展图",hrfe: "/",},
-    { id: 6, tlitle: "关于我",hrfe: "/",},
+    { id: 4, tlitle: "说说",hrfe: "/Miscellaneous",},
+    { id: 5, tlitle: "个人发展图",hrfe: "/Technology",},
+    { id: 6, tlitle: "关于我",hrfe: "/About",},
   ])
 
   const btnStyle =

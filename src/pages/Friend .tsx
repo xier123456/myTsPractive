@@ -1,7 +1,7 @@
-import type React from "react";
+
 import Title from "../style/title";
 
-const Friend: React.FC = () => {
+const Friend = () => {
   return (
     <div className=" min-h-screen bg-gradient-to-br from-blue-50 to-white p-6 ">
       <div className="mt-24">

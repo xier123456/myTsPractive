@@ -12,6 +12,9 @@ import Friend from "../pages/Friend ";
 import StudyNotes from "../pages/StudyNotes";
 import Notestitle from "../pages/page/Notestitle";
 import NotePage from "../pages/page/NotePage";
+import Technology from "../pages/Technology";
+import Miscellaneous from "../pages/Miscellaneous";
+import About from "../pages/About";
 
 const NavOut: React.FC = () => (
   <>
@@ -37,6 +40,9 @@ const AppRoter = () => {
             <Route path="/" element={<Home />} />
             <Route path="/Notes" element={<StudyNotes />} />
             <Route path="/Friend" element={<Friend />} />
+            <Route path="/Technology" element={<Technology/>}/>
+            <Route path="/Miscellaneous" element={<Miscellaneous/>}/>
+            <Route path="/About" element={<About/>}/>
           </Route>
           <Route element={<NavOutNoHeader />}>
             <Route path="/Notes/:id" element={<Notestitle />} />
